@@ -25,7 +25,7 @@ const data = [
       },
       "handle": "@rd" },
     "content": {
-      "text": "Je pense , donc je suis"
+      "text": "Je pense , donc je suis In order to experiment with Ajax we need a web page. We will make a web page that displays a list of blog posts. At the bottom of the list there will be a button to load more posts. Instead of that button navigating to another web page, it will trigger an Ajax request that loads the new posts asynchronously."
     },
     "created_at": 1461113959088
   },
