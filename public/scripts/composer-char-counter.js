@@ -1,5 +1,5 @@
 
-// Function responsible for the character count in the text-form to post on Tweeter
+// Function responsible for the character count in the text-form POST on Tweeter
 
 $(document).ready(function(){ 
 

@@ -25,10 +25,8 @@
 }
 
 .new-tweet input {
-	/*display: block;*/
 	float: left;
 	margin-bottom: 10px;
-	/*margin-left: 0;*/
 }
 
 .new-tweet .counter {
