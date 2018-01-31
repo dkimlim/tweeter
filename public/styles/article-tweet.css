@@ -1,20 +1,60 @@
 article.tweet {
 	position: relative;
-	/*padding: 5px 15px;*/
 	border-radius: 4px;
 	margin: 10px 10px;
 	height: 175px;
 	border: 1px solid #d3d3d3;
 	text-align: left;
+}
 
+/* Hover state */
+article.tweet:hover {
+	border: 1px solid black;
 }
 
 article.tweet header {
 	float: top;
 	text-align: left; 
 	background: #e9e9e9;
-	padding: 1px 1px 1px 1px;
-	height: 25%;
+	padding: 5px 1px 1px 1px;
+	height: 35%;
+}
+
+/* Hover state */
+article.tweet header:hover {
+	float: top;
+	text-align: left; 
+	background: #e9e9e9;
+	padding: 5px 1px 1px 1px;
+	height: 35%;
+}
+
+article.tweet img {
+	float: left;
+	padding-left: 5px;
+	border-radius: 10px;
+}
+
+/* Hover state */
+article.tweet img:hover {
+	float: left;
+	padding-left: 5px;
+	border-radius: 10px;
+}
+
+article.tweet .name {
+	padding-left: 10px;
+	height: 75px;
+	font-weight: bold;
+	color: #878484;
+}
+
+/* Hover state */
+article.tweet .name:hover {
+	padding-left: 10px;
+	height: 75px;
+	font-weight: bold;
+	color: black;
 }
 
 article.tweet .username {
@@ -23,15 +63,37 @@ article.tweet .username {
 	padding-top: 5px;
 	padding-right: 2px;
 	height: 75px;
+	font-weight: bold;
 }
 
+/* Footer has a class named .time-ago */
 article.tweet .time-ago {
 	font-size: 13px;
 	text-align: left; 
-	padding: 10px 0 10px 5px;
+	padding: 5px 0 10px 5px;
 	margin-top: 50px;
 	margin-bottom: 10px;
 	height: 20px;
 	border-top: 1px solid #e9e9e9;
 	position: bottom;
+	font-weight: bold;
 }
+
+/* Hover state */
+article.tweet .time-ago:hover {
+	font-size: 13px;
+	text-align: left; 
+	padding: 5px 0 10px 5px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	height: 20px;
+	border-top: 1px solid #e9e9e9;
+	position: bottom;
+	font-weight: bold;
+}
+
+
+
+
+
+
