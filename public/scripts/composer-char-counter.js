@@ -1,7 +1,6 @@
 // Function responsible for the character count in the text-form to post on Tweeter
 
 $(document).ready(function(){ 
-  console.log('start');
 
   const maxCounter = 140;
 
