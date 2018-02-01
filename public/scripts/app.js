@@ -1,8 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 
 $(document).ready(function(){ 
  	console.log('start');
@@ -23,14 +18,20 @@ $(document).ready(function(){
 	    <header><img src ="${article["user"].avatars.small}">
 	    <span class="name">${article["user"].name}</span>
 		<span class="username">${article["user"].handle}</span></header>
-	    <p>${article["content"].text}</p>
+	    <p>${escape(article["content"].text)}</p>
 	    <footer class="time-ago">${article.created_at}</footer>
 	     </article>`;
 
 	  return $tweet;
 	};
-	
 
+	//Escape function to prevent XSS in text area of tweet-form.
+	function escape(str) {
+ 	 var div = document.createElement('div');
+ 	 div.appendChild(document.createTextNode(str));
+ 	 return div.innerHTML;
+	}
+	
 	//Click button on form has 2 conditionals before passing to AJAX Post request:
 	// - cannot submit empty text (return error message)
 	// - cannot submit a textarea more than 140 characters (return error message)
@@ -42,12 +43,12 @@ $(document).ready(function(){
 
 	    let $textTweet = $('#textTweet').val();
 	    if (!$textTweet.length) {
-	    	alert("Text input cannot be empty");
+	    	alert("Your submission is empty! That won't be interesting to read :(");
 	    	return;
 	    }
 
 	    if ($textTweet.length > 140) {
-	    	alert("Text is too long");
+	    	alert("Your tweet is too long!");
 	    	return;
 	    }
 	   
@@ -70,7 +71,13 @@ $(document).ready(function(){
 	    console.debug(`Error @ ${label}`, err);
 	    }
   	}
-});
+
+  	//Button "compose" in the header toggles the new-tweet form
+  	$('.new-tweet').hide();
+
+  	$("button").click(function(event) {
+  		$('.new-tweet').toggle();
+  	});
 
 
 
@@ -79,4 +86,16 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+//end DOM
+}); 
 
