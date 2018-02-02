@@ -4,6 +4,10 @@ Tweeter is a simple, single-page Twitter clone.
 
 This project was built upon HTML, CSS, JS, jQuery, AJAX, Node, Express and MongoDB, practicing front-end skills as well as back-end coding.
 
+## Screenshots
+
+!["Screenshot of tweets"](https://github.com/dkimlim/tweeter/blob/master/docs/tweet.png?raw=true)
+
 ## Getting Started
 
 1. Install dependencies using the `npm install` command.
