@@ -66,6 +66,13 @@ $(document).ready(function(){
 		})
 	});
 
+
+	function getTweet() {
+				$.get('/tweets/')
+				.then(renderTweets)
+				.fail(handleError('loadArticles'));
+			}	
+
 	const handleError = (label) => {
 	    return (err) => {
 	    console.debug(`Error @ ${label}`, err);
