@@ -57,6 +57,9 @@ $(document).ready(function(){
 	}	
 	loadTweets();
 
+	//Hide error <span> where we can insert error message
+	$('.error ').hide();
+
 	//Click button on form has 2 conditionals before passing to AJAX Post request:
 	// - cannot submit empty text (return error message)
 	// - cannot submit a textarea more than 140 characters (return error message)
@@ -67,12 +70,12 @@ $(document).ready(function(){
 	    let $textTweet = $('#textTweet').val();
 
 	    if (!$textTweet.length) {
-	    	alert("Your submission is empty! That won't be interesting to read :(");
+	    	$.flash("Your submission is empty! That won't be interesting to read :(");
 	    	return;
 	    }
 
 	    if ($textTweet.length > 140) {
-	    	alert("Your tweet is too long!");
+	    	$.flash("Your tweet is too long for my short attention span!");
 	    	return;
 	    }
 	   
