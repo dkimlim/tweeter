@@ -25,14 +25,9 @@ $(document).ready(function(){
 	    
 	        <footer class="time-ago">${moment(article.created_at).fromNow()}</footer>
 
-
 	     </article>`;
 	  return $tweet;
 	};
-
-	            // const $footer = $('<footer>').text(moment(tweetObj.created_at).fromNow());
-
-// Math.round(your_elapsed_time/60000)
 
 	//Escape function to prevent XSS in text area of tweet-form.
 	function escape(str) {
@@ -47,32 +42,8 @@ $(document).ready(function(){
   		$('.new-tweet').toggle();
   		$('#textTweet').focus().select();
   	});
-
-	// //all this code is for appending specific age of tweet with appropriate text beside it
- //        //converting time in milliseconds to days
- //        let timeSinceTweet = ((Date.now() - tweetObject.created_at) / (1000 * 60 * 60 * 24));
- //        let hours = false;
- //        //if days < 1, multiplying by 24 to get amount of hours ago
- //        if(timeSinceTweet < 1) {
- //            timeSinceTweet *= 24;
- //            hours = true;
- //        }
     
- //        if(hours) {
- //            //if hours is less than 1
- //            if(timeSinceTweet < 1) {
- //                let mins = Math.floor(timeSinceTweet * 60);
- //                $footer.append(`<p class='posted_date'>${mins} minutes ago`);
- //            } else {
- //                $footer.append(`<p class='posted_date'>${Math.floor(timeSinceTweet)} hours ago`);
- //            }
- //        //if not in hours (still days) then print [x] days old 
- //        } else {
- //            $footer.append(`<p class='posted_date'>${Math.floor(timeSinceTweet)} days ago`);
- //        }
- //        return $tweet;
- //    }    
-    
+	//function to handle errors when Ajax is called
 	const handleError = (label) => {
 	    return (err) => {
 	    	console.debug(`Error @ ${label}`, err);
@@ -86,8 +57,6 @@ $(document).ready(function(){
 	}	
 	loadTweets();
 
-	//function to handle errors when Ajax is called
-	
 	//Click button on form has 2 conditionals before passing to AJAX Post request:
 	// - cannot submit empty text (return error message)
 	// - cannot submit a textarea more than 140 characters (return error message)
