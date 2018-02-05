@@ -6,7 +6,8 @@ This project was built upon HTML, CSS, JS, jQuery, AJAX, Node, Express and Mongo
 
 ## Screenshots
 
-!["Screenshot of tweets"](https://github.com/dkimlim/tweeter/blob/master/docs/tweet.png?raw=true)
+!["Screenshot of tweets"](https://github.com/dkimlim/tweeter/blob/master/docs/addtweet.png?raw=true)
+!["Screenshot of error flash message"](https://github.com/dkimlim/tweeter/blob/master/docs/error.png?raw=true)
 
 ## Getting Started
 
