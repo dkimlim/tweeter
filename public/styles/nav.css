@@ -17,6 +17,7 @@
 	color: #e8fdff;
 	background-color: #00a087;
 	font-size: 2em;
+	font-weight: bold;
 }
 
 #nav-bar .logo {
@@ -29,12 +30,13 @@
 	float: right;
 	background-color: #e9e9e9;
 	border-radius: 4px;
-	color: red;
+	color: #00a087;
 	font-size: 16px;
 	font-weight: bold;
-	width: 80px; 
-	height: 30px;
-	margin-top: 20px ;
+	width: 120px; 
+	height: 50px;
+	margin-top: 15px;
+	margin-right: 20px;
 	padding: 5px 5px;
 }
 

@@ -57,9 +57,6 @@ $(document).ready(function(){
 	}	
 	loadTweets();
 
-	//Hide error <span> where we can insert error message
-	$('.error ').hide();
-
 	//Click button on form has 2 conditionals before passing to AJAX Post request:
 	// - cannot submit empty text (return error message)
 	// - cannot submit a textarea more than 140 characters (return error message)
